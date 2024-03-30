@@ -4,7 +4,7 @@ export default function Weather() {
     const [data, setData] = useState("")
     const fetchData = async () => {
         // const respone = await fetch(`https://jsonplaceholder.typicode.com/todos/1`)
-        const respone = await fetch(`https://api.weatherapi.com/v1/current.json?key=6b23328d66f744eaa6934533241503&q=Paris`)
+        const respone = await fetch(`https://api.weatherapi.com/v1/current.json?key=APIKEY&q=Paris`)
 
         const jsonData = await respone.json()
         setData(jsonData)
